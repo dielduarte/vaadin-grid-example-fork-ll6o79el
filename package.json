@@ -1,0 +1,14 @@
+{
+  "name": "@wcd/dielduarte.vaadin-grid-example-fork-ll6o79el",
+  "version": "0.0.0",
+  "description": "",
+  "license": "ISC",
+  "type": "module",
+  "homepage": "{{ homepage }}",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve re7EHdyk5DpEMeYidVwa --open"
+  },
+  "devDependencies": {
+    "wcd-cli": "latest"
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Vaadin example</title>
+</head>
+
+<body>
+  <!-- Use web components in your HTML like regular built-in elements. -->
+  <vaadin-grid theme="row-dividers" column-reordering-allowed multi-sort>
+    <vaadin-grid-selection-column auto-select frozen></vaadin-grid-selection-column>
+    <vaadin-grid-sort-column width="9em" path="firstName"></vaadin-grid-sort-column>
+    <vaadin-grid-sort-column width="9em" path="lastName"></vaadin-grid-sort-column>
+    <vaadin-grid-column width="9em" path="address.city"></vaadin-grid-column>
+  </vaadin-grid>
+
+  <!-- Vaadin web components use standard JavaScript modules. -->
+  <script type="module" src="./dist/index.js"></script>
+
+  <script type="module">
+    // Use component's properties to populate data.
+    const grid = document.querySelector('vaadin-grid');
+    fetch('https://demo.vaadin.com/demo-data/1.0/people?count=200')
+      .then(res => res.json())
+      .then(json => grid.items = json.result);  
+  </script>
+</body>
+
+</html>

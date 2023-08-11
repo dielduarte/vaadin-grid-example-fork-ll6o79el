@@ -1,0 +1,1 @@
+{"version":3,"names":[],"sourceRoot":"/source_map/","sources":["src/index.js"],"sourcesContent":["import '@vaadin/vaadin-grid/vaadin-grid.js';\nimport '@vaadin/vaadin-grid/vaadin-grid-selection-column.js';\nimport '@vaadin/vaadin-grid/vaadin-grid-sort-column.js';\n"],"mappings":"AAAA,OAAO,oCAAP;AACA,OAAO,qDAAP;AACA,OAAO,gDAAP"}
